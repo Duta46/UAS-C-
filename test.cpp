@@ -107,6 +107,24 @@ glVertex3f(-3.0, 2.6, -8.5);
 glVertex3f(-3.0, 7.0, -8.5);
 glEnd();
 
+//AC bagian atas
+glBegin(GL_QUADS);
+glColor3ub(255,255,255);
+glVertex3f(-18.0, 7.0, -10.0);
+glVertex3f(-18.0, 7.0, -8.5);
+glVertex3f(-3.0, 7.0, -8.5);
+glVertex3f(-3.0, 7.0, -10.5);
+glEnd();
+
+// AC bagian bawah
+glBegin(GL_QUADS);
+glColor3ub(255, 255, 255);
+glVertex3f(-18.0, 2.6, -8.5);
+glVertex3f(-18.0, 2.0, -9.0);
+glVertex3f(-3.0, 2.0, -9.0);
+glVertex3f(-3.0, 2.6, -8.5);
+glEnd();
+
 
     
 //kasur
