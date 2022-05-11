@@ -264,7 +264,6 @@ break;
  case 'O':
  glTranslated(0.0, 0.0, 1.0); // geser objek kedalam//
  break;
-
  case 'p':
  case 'P':
  glTranslated(0.0, 0.0, -1.0); // geser ke luar//
