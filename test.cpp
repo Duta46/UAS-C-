@@ -99,12 +99,12 @@ glEnd();
 //AC
 
 //Posisi AC
-glBegin(GL_QUADS);//+5
+glBegin(GL_QUADS);
 glColor3ub(255, 250, 250);
-glVertex3f(-18.0, 20.0, -20.0);
-glVertex3f(-18.0, 10.0, -20.0);
-glVertex3f(-3.0, 10.0, -20.0);
-glVertex3f(-3.0, 20.0, -20.0);
+glVertex3f(-18.0, 7.0, -8.5);
+glVertex3f(-18.0, 2.6, -8.5);
+glVertex3f(-3.0, 2.6, -8.5);
+glVertex3f(-3.0, 7.0, -8.5);
 glEnd();
 
 
