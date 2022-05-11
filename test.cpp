@@ -243,13 +243,13 @@ void keyboard(unsigned char key, int x, int y)
 {
 switch (key)
 {
-//geser//
-case 'u':
-case 'U':
+//rotasi//
+case 'w':
+case 'W':
  glRotatef(3.0, 1.0, 0.0, 0.0); /* rotasi ke atas */
 break;
-case 'd':
-case 'D':
+case 's':
+case 'S':
 glRotatef(-3.0, 1.0, 0.0, 0.0); /* rotasi ke bawah */
 break;
  case '>':
