@@ -102,8 +102,8 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3ub(255, 250, 250);
 glVertex3f(-18.0, 7.0, -8.5);
-glVertex3f(-18.0, 2.6, -8.5);
-glVertex3f(-3.0, 2.6, -8.5);
+glVertex3f(-18.0, 3.0, -8.5);
+glVertex3f(-3.0, 3.0, -8.5);
 glVertex3f(-3.0, 7.0, -8.5);
 glEnd();
 
@@ -124,8 +124,6 @@ glVertex3f(-18.0, 2.0, -9.0);
 glVertex3f(-3.0, 2.0, -9.0);
 glVertex3f(-3.0, 2.6, -8.5);
 glEnd();
-
-
     
 //kasur
 glBegin(GL_QUADS); //+5
