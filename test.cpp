@@ -30,7 +30,6 @@ void init(){
 void display(){
  //reset
  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); //+5
- //dinding depan
 
 //dnbelakang gray
 glBegin(GL_QUADS); // membuat segi empat
@@ -102,8 +101,8 @@ glEnd();
 glBegin(GL_QUADS);
 glColor3ub(255, 250, 250);
 glVertex3f(-18.0, 7.0, -8.5);
-glVertex3f(-18.0, 3.0, -8.5);
-glVertex3f(-3.0, 3.0, -8.5);
+glVertex3f(-18.0, 2.6, -8.5);
+glVertex3f(-3.0, 2.6, -8.5);
 glVertex3f(-3.0, 7.0, -8.5);
 glEnd();
 
@@ -124,6 +123,8 @@ glVertex3f(-18.0, 2.0, -9.0);
 glVertex3f(-3.0, 2.0, -9.0);
 glVertex3f(-3.0, 2.6, -8.5);
 glEnd();
+
+
     
 //kasur
 glBegin(GL_QUADS); //+5
@@ -195,7 +196,7 @@ glVertex3f(2.0, -19.0, -10.0);
 glEnd();
 
 //jendela
-glBegin(GL_QUADS); //+5
+glBegin(GL_QUADS); 
 glColor3ub(255, 250, 250);
 glVertex3f(24.0, 20.0, -11.0);
 glVertex3f(24.0, -15.0, -11.0);
@@ -204,7 +205,7 @@ glVertex3f(24.0, 20.0, 5.0);
 glEnd();
 
 //
-glBegin(GL_QUADS); //+5
+glBegin(GL_QUADS);
 glColor3ub(0, 0, 0);
 glVertex3f(23.0, 20.0, -11.0);
 glVertex3f(23.0, 19.0, -11.0);
@@ -260,30 +261,46 @@ void keyboard(unsigned char key, int x, int y)
 switch (key)
 {
 //rotasi//
-case 'w':
-case 'W':
- glRotatef(3.0, 1.0, 0.0, 0.0); /* rotasi ke atas */
-break;
-case 's':
-case 'S':
-glRotatef(-3.0, 1.0, 0.0, 0.0); /* rotasi ke bawah */
-break;
- case '>':
- case '.':
- glRotatef(3.0, 0.0, 1.0, 0.0); //geser ke kanan
+ case 'i':
+ case 'I':
+ glRotatef(3.0, -1.0, 0.0, 0.0);//rotasi keatas
  break;
- case '<':
- case ',':
- glRotatef(-3.0, 0.0, 1.0, 0.0); //geser ke kiri
+ case 'k':
+ case 'K':
+ glRotatef(3.0, 1.0, 0.0, 0.0);//rotasi kebawah
  break;
- case 'o':
- case 'O':
- glTranslated(0.0, 0.0, 1.0); // geser objek kedalam//
+ case 'j':
+ case 'J':
+ glRotatef(3.0, 0.0, -1.0, 0.0);//rotasi kekiri
  break;
- case 'p':
- case 'P':
- glTranslated(0.0, 0.0, -1.0); // geser ke luar//
+ case 'l':
+ case 'L':
+ glRotatef(3.0, 0.0, 1.0, 0.0);//rotasi kekanan
+ break;
+//geser//
+ case 'w':
+ case 'W':
+glTranslated(0.0, 1.0, 0.0);//geser keatas
+ break;
+ case 's':
+ case 'S':
+ glTranslated(0.0, -1.0, 0.0);//geser kebawah
+ break;
+ case 'a':
+ case 'A':
+ glTranslated(-1.0, 0.0, 0.0);//geser kekiri
+ break;
+ case 'd':
+ case 'D':
+ glTranslated(1.0, 0.0, 0.0);//geser kekanan
+ break;
+ case '+':
+ case 'z':
+ glTranslated(0.0, 0.0, -1.0); //geser objek kedalam
+ break;
+ case '-':
+ case 'x':
+ glTranslated(0.0, 0.0, 1.0); //geser objek keluar
  break;
 }
 display(); //memanggil fungsi display atau bisa pakai glutPostRedisplay();
-}
